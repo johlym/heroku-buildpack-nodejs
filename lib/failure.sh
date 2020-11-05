@@ -18,7 +18,9 @@ failure_message() {
   local warn
 
   warn="$(cat "$warnings")"
-
+  echo "DEBUG SECTION: /tmp/**/build.log"
+  cat /tmp/**/build.log
+  echo "END DEBUG SECTION"
   echo ""
   echo "We're sorry this build is failing! You can troubleshoot common issues here:"
   echo "https://devcenter.heroku.com/articles/troubleshooting-node-deploys"
