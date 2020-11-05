@@ -116,6 +116,9 @@ yarn_2_install() {
   else
     monitor "yarn-2-install" yarn install --immutable --immutable-cache 2>&1
   fi
+  echo "DEBUG SECTION"
+  cat /tmp/**/build.log
+  echo "END DEBUG SECTION"
 }
 
 yarn_prune_devdependencies() {
